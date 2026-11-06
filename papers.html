@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research papers reviewed | Naeed Akhtar</title>
+  <meta name="description" content="The 50 research papers reviewed by Naeed Akhtar, grouped by theme: physics-based modelling, step-wise reasoning, agents and planning, and multimodal emotion recognition. Every title links to the paper at its source.">
+  <meta name="author" content="Naeed Akhtar">
+  <meta name="theme-color" content="#f8f7f3">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Research papers reviewed | Naeed Akhtar">
+  <meta property="og:description" content="50 research papers reviewed, grouped by theme, each with a link to the paper at its source.">
+  <meta property="og:site_name" content="Naeed Akhtar">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:url" content="https://portfolio.naeed.workers.dev/papers">
+  <meta property="og:image" content="https://portfolio.naeed.workers.dev/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Naeed Akhtar, Agentic and Robotics AI Trainer. Master's degrees in Mathematics, Physics and Computer Science.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Research papers reviewed | Naeed Akhtar">
+  <meta name="twitter:description" content="50 research papers reviewed, grouped by theme, each with a link to the paper at its source.">
+  <meta name="twitter:image" content="https://portfolio.naeed.workers.dev/assets/og-image.png">
+  <link rel="canonical" href="https://portfolio.naeed.workers.dev/papers">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html" aria-label="Naeed Akhtar, home">
+        <img src="assets/logo-small.svg" alt="" width="34" height="34">
+        <span>Naeed Akhtar</span>
+      </a>
+      <nav id="nav" class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="controls">
+        <button id="theme" class="icon-btn" type="button" aria-label="Toggle light and dark theme">
+          <svg class="theme-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="theme-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button id="menu" class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero papers-hero">
+      <div class="blob b1" aria-hidden="true"></div>
+      <div class="blob b2" aria-hidden="true"></div>
+      <div class="wrap">
+        <a class="back-link" href="index.html">← Back to the portfolio</a>
+        <h1>Research papers reviewed</h1>
+        <p class="lede"><span data-papers-total>50</span> research papers I have reviewed, published from <span data-papers-first>2003</span> to <span data-papers-last>2026</span>. Each title opens the paper at its source: the DOI page, arXiv or the conference proceedings.</p>
+      </div>
+    </section>
+
+    <section class="section alt papers-section" aria-label="List of papers">
+      <div class="wrap">
+        <h2 class="visually-hidden">All papers</h2>
+        <noscript><p class="noscript-note">The list of papers needs JavaScript. The portfolio's other pages work without it.</p></noscript>
+        <div id="paper-filters" class="paper-filters" role="group" aria-label="Filter by theme"></div>
+        <div class="paper-tools">
+          <label class="paper-search">
+            <span class="visually-hidden">Search the papers</span>
+            <input id="paper-search" type="search" placeholder="Search title, author or year" autocomplete="off" spellcheck="false">
+          </label>
+          <button id="paper-sort" class="btn small" type="button" aria-label="Sort order: oldest first. Press to reverse.">Oldest first</button>
+        </div>
+        <p id="paper-status" class="muted" role="status" aria-live="polite"></p>
+        <ol id="paper-list" class="paper-list"></ol>
+        <p id="paper-empty" class="paper-empty card" hidden>No paper matches this search. Clear the search or choose another theme.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© Naeed Akhtar</p>
+      <a href="index.html">← Back to the portfolio</a>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/papers-data.js" defer></script>
+  <script src="assets/papers.js" defer></script>
+</body>
+</html>

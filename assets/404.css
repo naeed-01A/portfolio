@@ -1,0 +1,6 @@
+/* Styles for the "page not found" page. The theme tokens come from style.css; this file only adds the layout. */
+.nf { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 32px 16px; }
+.nf-logo { border-radius: 22px; margin-bottom: 18px; box-shadow: 0 8px 24px color-mix(in srgb, var(--accent) 35%, transparent); }
+.nf-code { margin: 0; font-family: var(--serif); font-size: clamp(3.5rem, 14vw, 6rem); font-weight: 800; line-height: 1; background: linear-gradient(90deg, var(--c1), var(--c2), var(--c3)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.nf h1 { margin: 12px 0 8px; font-family: var(--serif); font-size: clamp(1.5rem, 5vw, 2rem); }
+.nf-text { max-width: 36ch; color: var(--muted); margin: 0 0 24px; }

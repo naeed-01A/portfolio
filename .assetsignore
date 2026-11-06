@@ -1,0 +1,10 @@
+# Files that live in the repository but must not be served as part of the website
+.git
+.gitignore
+.assetsignore
+.wrangler
+node_modules
+private-resume
+wrangler.jsonc
+worker.js
+README.md
