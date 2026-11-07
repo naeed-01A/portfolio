@@ -248,7 +248,11 @@
   // icon: the real logo file in assets/icons (Simple Icons, CC0), used unchanged apart from its colour.
   var PROFILES = [
     { name: "LinkedIn", handle: "naeed-akhtar-4a1882449", url: "https://www.linkedin.com/in/naeed-akhtar-4a1882449/", icon: "assets/icons/linkedin.svg" },
-    { name: "GitHub", handle: "naeed-01A", url: "https://github.com/naeed-01A", icon: "assets/icons/github.svg" }
+    { name: "X", handle: "naeed_ar", url: "https://x.com/naeed_ar", icon: "assets/icons/x.svg" },
+    { name: "GitHub", handle: "naeed-01A", url: "https://github.com/naeed-01A", icon: "assets/icons/github.svg" },
+    { name: "HackerRank", handle: "akhtarnaeed1984", url: "https://www.hackerrank.com/profile/akhtarnaeed1984", icon: "assets/icons/hackerrank.svg" },
+    { name: "Kaggle", handle: "naeedakhtar", url: "https://www.kaggle.com/naeedakhtar", icon: "assets/icons/kaggle.svg" },
+    { name: "LeetCode", handle: "naeed_ar", url: "https://leetcode.com/u/naeed_ar/", icon: "assets/icons/leetcode.svg" }
   ];
 
   var chrono = EDU.slice().reverse(); // oldest first

@@ -13,7 +13,7 @@ Plain HTML, CSS and JavaScript. No build step, no dependencies.
 - **Education**: a summary strip, an expandable timeline from school to the master's degrees with a score ring per stage (CGPA, or percentage and division for Classes XI-XII), topics and subtopics for Mathematics, Physics and Computer Science at every stage (with the syllabus they follow), an "Expand all" button and a CGPA chart. Every stage links to the institution's website.
 - **Research papers reviewed** (`papers.html`, served at `/papers`): the list of 50 papers with year, authors, venue and a link to each paper at its source (DOI, arXiv or conference proceedings). Filter by theme (the four filter tiles double as the summary numbers), search by title, author or year, and sort oldest or newest first. A link card in the Education section and the number in the hero card both lead here.
 - **Languages**: English and Hindi (native), Urdu (professional working), Persian (fluent) and Arabic (basic), each in its own script with its level.
-- **Find me online**: cards for LinkedIn and GitHub, each with the real logo of the platform. Add more platforms only once the accounts exist.
+- **Find me online**: cards for LinkedIn, X, GitHub, HackerRank, Kaggle and LeetCode, each with the real logo of the platform.
 - Dark and light theme, each with its own palette. The first paint follows the visitor's system setting and the choice is remembered.
 - Responsive down to 320px wide, 44px touch targets, keyboard accessible (tabs work with the arrow, Home and End keys), respects reduced motion, print-friendly (everything expands when printed).
 - Strict Content Security Policy: no inline styles, one hashed inline script, no third-party scripts.
@@ -42,7 +42,7 @@ Almost everything is data at the top of `assets/app.js`:
 | Topics and subtopics of every stage | `topics` inside each `EDU` entry (see below) |
 | Where a topic list comes from | `basis` inside each `EDU` entry |
 | Subject names, colours and the "In AI training" sentence | `FIELDS` |
-| Profile links (LinkedIn, GitHub) | `PROFILES` list; each entry points to its logo file in `assets/icons/`. Also update `sameAs` in the structured data in `index.html` and the profile chips in the resume template |
+| Profile links (LinkedIn, X, GitHub, HackerRank, Kaggle, LeetCode) | `PROFILES` list; each entry points to its logo file in `assets/icons/`. Also update `sameAs` in the structured data in `index.html` and the profile chips in the resume template |
 | Research papers reviewed (title, authors, venue, link, theme) | `assets/papers-data.js`, one line per paper in the order shown (oldest first); the paper number is its position. The count on the home page and on the papers page comes from this list. Themes (`phys`, `reason`, `agents`, `emotion`) and their colours are defined in `assets/papers.js` |
 
 A topic area is a list whose first item is the area name and whose other items are its subtopics:
@@ -82,7 +82,7 @@ assets/papers-data.js the list of papers (used by the papers page and for the co
 assets/papers.js      rendering, filter, search and sort of the papers page
 assets/logo.svg       NA monogram with orbit ring (hero card, 404, share preview)
 assets/logo-small.svg simplified monogram for tiny sizes (header; favicon.svg is the same file)
-assets/icons/         real logos of LinkedIn and GitHub (Simple Icons, CC0; only the colour is set)
+assets/icons/         real logos of LinkedIn, X, GitHub, HackerRank, Kaggle and LeetCode (Simple Icons, CC0; only the colour is set)
 assets/404.css        layout of the not-found page
 assets/Naeed_Akhtar_Resume.pdf  resume (download button in the hero)
 assets/og-image.png   1200x630 share-preview image
